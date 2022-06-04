@@ -1,0 +1,29 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>CompanyListEntity</Name>
+    <Description>&lt;没有可用的说明&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>CompanyListEntity</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="CompanyListEntity.csproj" File="CompanyListEntity.csproj" ReplaceParameters="true">
+      <Folder Name="Modle" TargetFolderName="Modle">
+        <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.cs">CompanyList.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="BoBConfiguration.cs">BoBConfiguration.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="BoBMapperProfile.cs">BoBMapperProfile.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$Block.cs">CompanyListBlock.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$Module.cs">CompanyListModule.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="I$projectname$Block.cs">ICompanyListBlock.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
